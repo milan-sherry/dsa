@@ -15,7 +15,10 @@ erase(it) works for vectors where u go through the list using iterator it then a
  
  1. Today i learned hashmaps, so for two sum problem instead of going through every number for every number we make a map with the second num as key and the index of it as value by using target minus first num
  So when you can check for the number if the number is already in the map.
+
 217. Check if a number appears twice i used hashmap but hashset is enough as it just checks if it there already in the set if it is then it will say oh then dont add it this is the second time so dont
 
-15.This was very hard, use two pointers and a sorted array check duplicates as well this is took me two days
+242 Anagram basically two words with same letters in different orientation make a hash map to check frequency then go through the second word and if the letter is there decrease the frequency by one if it is not then its not a anagram and return false.
+
+15.This was very hard, use two pointers from either side and a sorted array check duplicates as well this is took me two days basically you sort the whoel thing then you check if the previous element and the current element are the same if they are then continue till you get to a unique element then check if sum of the left right and i where left is to the right of i and right is at the end
  
