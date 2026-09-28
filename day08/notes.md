@@ -1,0 +1,1 @@
+we can use unordered_map<int,vector<vector<int>>> v(3) in a for loop for each key value will give u a vector with 3 empyt vectors if we had just vector<int> then did v(3) wee would get a list of 3 zeros
