@@ -1,1 +1,3 @@
 we can use unordered_map<int,vector<vector<int>>> v(3) in a for loop for each key value will give u a vector with 3 empyt vectors if we had just vector<int> then did v(3) wee would get a list of 3 zeros
+
+36. Thid id valid sudoku its pretty easy go throught the table and for each element check if it is already in a specific row or column or box. To check for box i used a method where i divide the column and row index by 3 then if c is 0 then index is r if c 1 then index is r+3 if c is 2 then index is r+6 there is a better equation maybe but this has same time complexity so it doesnt matter much
