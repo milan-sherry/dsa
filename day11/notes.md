@@ -1,8 +1,9 @@
+Rotated Sorted Array: 
+take 1234567 the rotated will be 4567123. This example is said to be rotated 4 times like one time would be 7123456. For questions like this simply check if value at mid is greater than value at low then the left of mid is sorted till if not then the right of mid is sorted from mid. Then we can discard the sorted side and do the same above tested on the unsorted side again.
 
 
+424. Here the question says taht we can replace k letters in a substring find longest substring of same elelments so like aaaa from aabb where k is 2, to do this we keep track of max freq right left and we use the condition r-l+1-max>k ie if there are more than k spaces then it would move the l. The difficult thing was that max doesnt need to be changed it should stay the max it ever reached meaning if it was 3 then the max should turn to 2 leave it as 3. That is becasue the max value is directly related to the final value as the max +k is final it doesnt have to change unless something bigger is found and also it doesnt matter it left moving condition as that means the r-l will stay the same till a new max which is a bigger max is found so it wont care for lower windows so doesnt change to lower window.
+  
+567. make a frequency array for the s1 and the window then check if the window and s1 are equal. It might be better to iterate through the window each time with the s1 freq array as then we would have to do the operations for the length of the window but in the case taken best it does 26 operations every time so the time complexity is only n while in the other case it is considered n*m
 
-424. Here the question says taht we can replace k letters in a substring find longest substring of same elelments so like aaaa from aabb where k is 2, to do this we keep track of max freq right left 
-and we use the condition r-l+1-max>k ie if there are more than k spaces then it would move the l. The difficult thing was that max doesnt need to be changed it should stay the max it ever reached 
-meaning if it was 3 then the max should turn to 2 leave it as 3. That is becasue the max value is directly related to the final value as the max +k is final it doesnt have to change unless something 
-bigger is found and also it doesnt matter it left moving condition as that means the r-l will stay the same till a new max which is a bigger max is found so it wont care for lower windows so doesnt 
-change to lower window.
+153. This is rotated array simply check the low in the sorted side then go to the other side and make the mid the low or the high of the unsorted side and repeat the final lowest value is the min.
